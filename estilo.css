@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+  width: 414px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/*barra superior*/
+header {
+  height: 92px;
+  width: 414px;
+  background-color: #cf2b2b;
+  position: fixed;
+  top: 0;
+}
+/*barra inferior*/
+footer {
+  background-color: #ffffff;
+  height: 92px;
+  width: 414px;
+  position: fixed;
+  bottom: 0;
+}
+/*textos*/
+h1 {
+  font-family: "Righteous", cursive;
+  font-size: 44px;
+}
+h2 {
+  font-family: "Righteous", cursive;
+  font-size: 26px;
+}
+h3 {
+  font-weight: 700;
+}
+p {
+  font-weight: 300;
+  font-size: 15px;
+  color: #a6a6a6;
+}
