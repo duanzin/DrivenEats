@@ -41,8 +41,15 @@ button {
   background-color: #cbcbcb;
   width: 364px;
   height: 61px;
+  padding: 0 80px;
   border-radius: 50px;
   border: none;
+}
+
+/*botão apos escolher todas as opçoes*/
+.pedir {
+  background-color: #32b72f;
+  cursor: pointer;
 }
 /*imagem*/
 img {
@@ -75,6 +82,9 @@ p {
   overflow: hidden;
   overflow-x: scroll;
 }
+.opcoes::-webkit-scrollbar {
+  display: none;
+}
 /*barra rolante das opçoes de comidas*/
 .barracomida {
   min-width: 580px;
@@ -93,4 +103,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
+}
+/*opçao de comida selecionada*/
+.comidaescolhida {
+  padding: 12px 8px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #32b72f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

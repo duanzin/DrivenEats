@@ -27,22 +27,37 @@
     <main>
       <h2>Primeiro, seu prato</h2>
       <div class="opcoes">
-        <div class="barracomida">
-          <div class="comida">
+        <div class="barracomida" data-test="dishes">
+          <div
+            id="frango1"
+            class="comida prato"
+            onclick="marcarprato('#frango1')"
+            data-test="food-option"
+          >
             <img src="imagens\frango_yin_yang 1.png" />
-            <h3>Frango Yin Yang</h3>
+            <h3 data-test="food-title">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
             R$ 14,90
           </div>
-          <div class="comida">
+          <div
+            id="frango2"
+            class="comida prato"
+            onclick="marcarprato('#frango2')"
+            data-test="food-option"
+          >
             <img src="imagens\frango_yin_yang 1.png" />
-            <h3>Frango Yin Yang</h3>
+            <h3 data-test="food-title">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
             R$ 14,90
           </div>
-          <div class="comida">
+          <div
+            id="frango3"
+            class="comida prato"
+            onclick="marcarprato('#frango3')"
+            data-test="food-option"
+          >
             <img src="imagens\frango_yin_yang 1.png" />
-            <h3>Frango Yin Yang</h3>
+            <h3 data-test="food-title">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
             R$ 14,90
           </div>
@@ -50,22 +65,37 @@
       </div>
       <h2>Agora, sua bebida</h2>
       <div class="opcoes">
-        <div class="barracomida">
-          <div class="comida">
+        <div class="barracomida" data-test="drinks">
+          <div
+            id="coca1"
+            class="comida bebida"
+            onclick="marcarbebida('#coca1')"
+            data-test="food-option"
+          >
             <img src="imagens\coquinha_gelada 1.png" />
-            <h3>Coquinha gelada</h3>
+            <h3 data-test="food-title">Coquinha gelada</h3>
             <p>Lata 350ml</p>
             R$ 4,90
           </div>
-          <div class="comida">
+          <div
+            id="coca2"
+            class="comida bebida"
+            onclick="marcarbebida('#coca2')"
+            data-test="food-option"
+          >
             <img src="imagens\coquinha_gelada 1.png" />
-            <h3>Coquinha gelada</h3>
+            <h3 data-test="food-title">Coquinha gelada</h3>
             <p>Lata 350ml</p>
             R$ 4,90
           </div>
-          <div class="comida">
+          <div
+            id="coca3"
+            class="comida bebida"
+            onclick="marcarbebida('#coca3')"
+            data-test="food-option"
+          >
             <img src="imagens\coquinha_gelada 1.png" />
-            <h3>Coquinha gelada</h3>
+            <h3 data-test="food-title">Coquinha gelada</h3>
             <p>Lata 350ml</p>
             R$ 4,90
           </div>
@@ -73,22 +103,37 @@
       </div>
       <h2>Por fim, sua sobremesa</h2>
       <div class="opcoes">
-        <div class="barracomida">
-          <div class="comida">
+        <div class="barracomida" data-test="desserts">
+          <div
+            id="sm1"
+            class="comida sobremesa"
+            onclick="marcarmesa('#sm1')"
+            data-test="food-option"
+          >
             <img src="imagens\pudim 1.png" />
-            <h3>Pudim</h3>
+            <h3 data-test="food-title">Pudim</h3>
             <p>Apenas pudim</p>
             R$ 7,90
           </div>
-          <div class="comida">
+          <div
+            id="sm2"
+            class="comida sobremesa"
+            onclick="marcarmesa('#sm2')"
+            data-test="food-option"
+          >
             <img src="imagens\pudim 1.png" />
-            <h3>Pudim</h3>
+            <h3 data-test="food-title">Pudim</h3>
             <p>Apenas pudim</p>
             R$ 7,90
           </div>
-          <div class="comida">
+          <div
+            id="sm3"
+            class="comida sobremesa"
+            onclick="marcarmesa('#sm3')"
+            data-test="food-option"
+          >
             <img src="imagens\pudim 1.png" />
-            <h3>Pudim</h3>
+            <h3 data-test="food-title">Pudim</h3>
             <p>Apenas pudim</p>
             R$ 7,90
           </div>
@@ -97,8 +142,13 @@
     </main>
     <footer>
       <div class="pedido">
-        <button>Selecione os 3 itens para fechar o pedido</button>
+        <a>
+          <button data-test="finish-button">
+            Selecione os 3 itens para fechar o pedido
+          </button>
+        </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
